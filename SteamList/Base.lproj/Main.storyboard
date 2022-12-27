@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Games-->
+        <!--News-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SteamList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="NewsViewController" customModule="SteamList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                         <color key="backgroundColor" red="0.28627450980392155" green="0.65098039215686276" blue="1" alpha="0.54595656622023814" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="News" image="book.fill" catalog="system" id="51G-o9-Fs5"/>
-                    <navigationItem key="navigationItem" title="Games" id="EwU-hS-0ed"/>
+                    <navigationItem key="navigationItem" title="News" id="EwU-hS-0ed"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -29,7 +29,7 @@
         <!--Favorites-->
         <scene sceneID="krd-eI-4Fi">
             <objects>
-                <viewController id="FXI-jZ-a95" sceneMemberID="viewController">
+                <viewController id="FXI-jZ-a95" customClass="FavsViewController" customModule="SteamList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dPh-yZ-vwJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="-103" y="149"/>
         </scene>
-        <!--News-->
+        <!--Games-->
         <scene sceneID="VFh-on-Doa">
             <objects>
-                <viewController id="XXo-NI-97r" sceneMemberID="viewController">
+                <viewController title="Games" id="XXo-NI-97r" customClass="GamesViewController" customModule="SteamList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PC1-uD-KAb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,7 +54,7 @@
                         <color key="backgroundColor" red="0.28627450980392155" green="0.65098039215686276" blue="1" alpha="0.55000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Games" image="list.star" catalog="system" id="peZ-qv-Dso"/>
-                    <navigationItem key="navigationItem" title="News" id="X8V-VU-igU"/>
+                    <navigationItem key="navigationItem" title="Games" id="X8V-VU-igU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0iR-yX-vTH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

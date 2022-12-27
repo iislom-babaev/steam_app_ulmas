@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		C0FF4661295ABFF600931949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4660295ABFF600931949 /* AppDelegate.swift */; };
 		C0FF4663295ABFF600931949 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4662295ABFF600931949 /* SceneDelegate.swift */; };
-		C0FF4665295ABFF600931949 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4664295ABFF600931949 /* ViewController.swift */; };
 		C0FF4668295ABFF600931949 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FF4666295ABFF600931949 /* Main.storyboard */; };
 		C0FF466A295ABFF700931949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FF4669295ABFF700931949 /* Assets.xcassets */; };
 		C0FF466D295ABFF700931949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FF466B295ABFF700931949 /* LaunchScreen.storyboard */; };
+		C0FF4675295B139800931949 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4674295B139800931949 /* GamesViewController.swift */; };
+		C0FF4677295B13A700931949 /* FavsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4676295B13A700931949 /* FavsViewController.swift */; };
+		C0FF4679295B13B300931949 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4678295B13B300931949 /* NewsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C0FF465D295ABFF600931949 /* SteamList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteamList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FF4660295ABFF600931949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0FF4662295ABFF600931949 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C0FF4664295ABFF600931949 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0FF4667295ABFF600931949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0FF4669295ABFF700931949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0FF466C295ABFF700931949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0FF466E295ABFF700931949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0FF4674295B139800931949 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		C0FF4676295B13A700931949 /* FavsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsViewController.swift; sourceTree = "<group>"; };
+		C0FF4678295B13B300931949 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,10 @@
 			children = (
 				C0FF4660295ABFF600931949 /* AppDelegate.swift */,
 				C0FF4662295ABFF600931949 /* SceneDelegate.swift */,
-				C0FF4664295ABFF600931949 /* ViewController.swift */,
 				C0FF4666295ABFF600931949 /* Main.storyboard */,
+				C0FF4674295B139800931949 /* GamesViewController.swift */,
+				C0FF4676295B13A700931949 /* FavsViewController.swift */,
+				C0FF4678295B13B300931949 /* NewsViewController.swift */,
 				C0FF4669295ABFF700931949 /* Assets.xcassets */,
 				C0FF466B295ABFF700931949 /* LaunchScreen.storyboard */,
 				C0FF466E295ABFF700931949 /* Info.plist */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0FF4665295ABFF600931949 /* ViewController.swift in Sources */,
 				C0FF4661295ABFF600931949 /* AppDelegate.swift in Sources */,
+				C0FF4675295B139800931949 /* GamesViewController.swift in Sources */,
+				C0FF4677295B13A700931949 /* FavsViewController.swift in Sources */,
+				C0FF4679295B13B300931949 /* NewsViewController.swift in Sources */,
 				C0FF4663295ABFF600931949 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
