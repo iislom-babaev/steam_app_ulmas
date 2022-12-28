@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -50,15 +49,62 @@
                     <view key="view" contentMode="scaleToFill" id="PC1-uD-KAb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="33I-e0-LQa">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" red="0.15686274509803921" green="0.28235294117647058" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="44" id="LtF-sV-RO6">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LtF-sV-RO6" id="vFd-sl-YsR">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fIf-rf-9hI">
+                                                    <rect key="frame" x="347" y="-0.3333333333333286" width="30" height="43.666666666666657"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="43.999999999999986" id="1h2-sT-eff"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="30" id="6hJ-FH-Cec"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Moo-qO-nBj"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="c0S-BZ-eFR"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="43.999999999999986" id="eHu-e4-1Og"/>
+                                                        <constraint firstAttribute="width" constant="30" id="qz9-wc-mui"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="fIf-rf-9hI" secondAttribute="bottom" id="38F-n5-uVd"/>
+                                                <constraint firstItem="fIf-rf-9hI" firstAttribute="top" secondItem="vFd-sl-YsR" secondAttribute="top" id="WfO-LC-iSL"/>
+                                                <constraint firstItem="fIf-rf-9hI" firstAttribute="top" secondItem="vFd-sl-YsR" secondAttribute="top" id="YYm-tI-YAq"/>
+                                                <constraint firstAttribute="bottom" secondItem="fIf-rf-9hI" secondAttribute="bottom" id="ZSd-eH-jdG"/>
+                                                <constraint firstAttribute="trailing" secondItem="fIf-rf-9hI" secondAttribute="trailing" constant="16" id="eha-DA-zZK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.15686274509803921" green="0.28235294117647058" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Iv3-3a-cn5"/>
                         <color key="backgroundColor" red="0.28627450980392155" green="0.65098039215686276" blue="1" alpha="0.55000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Iv3-3a-cn5" firstAttribute="trailing" secondItem="33I-e0-LQa" secondAttribute="trailing" id="9UT-MI-xHk"/>
+                            <constraint firstItem="33I-e0-LQa" firstAttribute="leading" secondItem="Iv3-3a-cn5" secondAttribute="leading" id="eCh-wM-LCR"/>
+                            <constraint firstItem="Iv3-3a-cn5" firstAttribute="bottom" secondItem="33I-e0-LQa" secondAttribute="bottom" id="hid-83-ty3"/>
+                            <constraint firstItem="33I-e0-LQa" firstAttribute="top" secondItem="Iv3-3a-cn5" secondAttribute="top" id="kgD-b6-nQl"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Games" image="list.star" catalog="system" id="peZ-qv-Dso"/>
                     <navigationItem key="navigationItem" title="Games" id="X8V-VU-igU"/>
+                    <connections>
+                        <outlet property="tableView" destination="33I-e0-LQa" id="tGu-7h-cko"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0iR-yX-vTH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-906" y="149"/>
+            <point key="canvasLocation" x="-906.10687022900754" y="148.59154929577466"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="I22-Ub-DD0">
@@ -67,7 +113,12 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XQg-Qk-j2v">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <tabBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" white="0.67000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tabBarAppearance>
+                        <tabBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" white="0.67000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tabBarAppearance>
                     </tabBar>
                     <connections>
                         <segue destination="GJT-2B-aTt" kind="relationship" relationship="viewControllers" id="cnx-yo-j0D"/>
@@ -131,6 +182,15 @@
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="compactScrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <connections>
                         <segue destination="XXo-NI-97r" kind="relationship" relationship="rootViewController" id="qWg-fR-hCi"/>
@@ -144,9 +204,7 @@
     <resources>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="list.star" catalog="system" width="128" height="95"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>
