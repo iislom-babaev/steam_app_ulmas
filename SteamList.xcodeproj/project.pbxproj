@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0138112295D6815007B257F /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0138110295D6815007B257F /* GameTableViewCell.swift */; };
+		C0138113295D6815007B257F /* GameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0138111295D6815007B257F /* GameTableViewCell.xib */; };
 		C0FF4661295ABFF600931949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4660295ABFF600931949 /* AppDelegate.swift */; };
 		C0FF4663295ABFF600931949 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4662295ABFF600931949 /* SceneDelegate.swift */; };
 		C0FF4668295ABFF600931949 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FF4666295ABFF600931949 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0138110295D6815007B257F /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
+		C0138111295D6815007B257F /* GameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameTableViewCell.xib; sourceTree = "<group>"; };
 		C0FF465D295ABFF600931949 /* SteamList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteamList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FF4660295ABFF600931949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0FF4662295ABFF600931949 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				C0FF4669295ABFF700931949 /* Assets.xcassets */,
 				C0FF466B295ABFF700931949 /* LaunchScreen.storyboard */,
 				C0FF466E295ABFF700931949 /* Info.plist */,
+				C0138110295D6815007B257F /* GameTableViewCell.swift */,
+				C0138111295D6815007B257F /* GameTableViewCell.xib */,
 			);
 			path = SteamList;
 			sourceTree = "<group>";
@@ -134,6 +140,7 @@
 				C0FF466D295ABFF700931949 /* LaunchScreen.storyboard in Resources */,
 				C0FF466A295ABFF700931949 /* Assets.xcassets in Resources */,
 				C0FF4668295ABFF600931949 /* Main.storyboard in Resources */,
+				C0138113295D6815007B257F /* GameTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +156,7 @@
 				C0FF4677295B13A700931949 /* FavsViewController.swift in Sources */,
 				C0FF4679295B13B300931949 /* NewsViewController.swift in Sources */,
 				C0FF4663295ABFF600931949 /* SceneDelegate.swift in Sources */,
+				C0138112295D6815007B257F /* GameTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
