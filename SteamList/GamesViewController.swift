@@ -11,36 +11,7 @@ class GamesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    private var games: [Game] = [
-    Game(title: "Dota 2", isFavorite: false),
-    Game(title: "League of Legends", isFavorite: false),
-    Game(title: "GTA Vice City", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Counter Strkie 1.6", isFavorite: false),
-    Game(title: "Need For Speed", isFavorite: false)
-    ]
+
         
     
     
@@ -64,13 +35,13 @@ class GamesViewController: UIViewController {
 extension GamesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return games.count
+        return MockData.games.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: GameTableViewCell.cellId, for:  indexPath) as! GameTableViewCell
-        let game = games[indexPath.row]
+        let game = MockData.games[indexPath.row]
         cell.cellTitle.text = "\(game.title)"
         if game.isFavorite {
             cell.cellIcon.imageView?.image = UIImage(systemName: "star.fill")
@@ -86,15 +57,4 @@ extension GamesViewController: UITableViewDataSource {
 
 extension GamesViewController: UITableViewDelegate {
     
-}
-
-
-struct Game {
-    let title: String
-    var isFavorite: Bool
-    
-    init(title: String, isFavorite: Bool) {
-        self.title = title
-        self.isFavorite = isFavorite
-    }
 }
