@@ -24,10 +24,14 @@ class GamesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configureTableView()
+    }
+    
+    
+    
+    private func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        
         tableView.register(UINib.init(nibName: cellId, bundle: nil), forCellReuseIdentifier: cellId)
     }
     
