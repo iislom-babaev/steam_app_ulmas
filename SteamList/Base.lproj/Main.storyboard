@@ -68,13 +68,7 @@
                             <constraint firstItem="33I-e0-LQa" firstAttribute="top" secondItem="Iv3-3a-cn5" secondAttribute="top" id="kgD-b6-nQl"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Games" image="list.star" catalog="system" id="peZ-qv-Dso">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
-                                <color key="value" systemColor="systemYellowColor"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Games" image="list.star" catalog="system" id="peZ-qv-Dso"/>
                     <navigationItem key="navigationItem" title="Games" id="X8V-VU-igU"/>
                     <connections>
                         <outlet property="tableView" destination="33I-e0-LQa" id="tGu-7h-cko"/>
@@ -164,13 +158,7 @@
         <scene sceneID="gLE-lL-MjN">
             <objects>
                 <navigationController id="GJT-2B-aTt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="fm7-Je-N65">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
-                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="" id="fm7-Je-N65"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="cc3-zP-ELU">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
