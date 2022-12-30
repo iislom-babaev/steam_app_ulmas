@@ -49,6 +49,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C07E48D1295F1A02009D18BB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0FF4674295B139800931949 /* GamesViewController.swift */,
+				C0FF4676295B13A700931949 /* FavsViewController.swift */,
+				C0FF4678295B13B300931949 /* NewsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C07E48D2295F1A1C009D18BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0138110295D6815007B257F /* GameTableViewCell.swift */,
+				C0138111295D6815007B257F /* GameTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C07E48D3295F1A38009D18BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C07E48CD295EF245009D18BB /* GameModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C07E48D4295F1A4E009D18BB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C07E48CF295EF2BA009D18BB /* MockData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		C0FF4654295ABFF600931949 = {
 			isa = PBXGroup;
 			children = (
@@ -68,19 +103,16 @@
 		C0FF465F295ABFF600931949 /* SteamList */ = {
 			isa = PBXGroup;
 			children = (
+				C07E48D4295F1A4E009D18BB /* Data */,
+				C07E48D3295F1A38009D18BB /* Models */,
+				C07E48D2295F1A1C009D18BB /* Views */,
+				C07E48D1295F1A02009D18BB /* Controllers */,
 				C0FF4660295ABFF600931949 /* AppDelegate.swift */,
 				C0FF4662295ABFF600931949 /* SceneDelegate.swift */,
 				C0FF4666295ABFF600931949 /* Main.storyboard */,
-				C0FF4674295B139800931949 /* GamesViewController.swift */,
-				C0FF4676295B13A700931949 /* FavsViewController.swift */,
-				C0FF4678295B13B300931949 /* NewsViewController.swift */,
 				C0FF4669295ABFF700931949 /* Assets.xcassets */,
 				C0FF466B295ABFF700931949 /* LaunchScreen.storyboard */,
 				C0FF466E295ABFF700931949 /* Info.plist */,
-				C0138110295D6815007B257F /* GameTableViewCell.swift */,
-				C0138111295D6815007B257F /* GameTableViewCell.xib */,
-				C07E48CD295EF245009D18BB /* GameModel.swift */,
-				C07E48CF295EF2BA009D18BB /* MockData.swift */,
 			);
 			path = SteamList;
 			sourceTree = "<group>";
