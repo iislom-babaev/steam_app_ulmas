@@ -9,6 +9,7 @@ import UIKit
 
 class GameTableViewCell: UITableViewCell {
 
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -35,3 +36,8 @@ class GameTableViewCell: UITableViewCell {
              }
     }
 }
+
+extension GameTableViewCell {
+    static let cellId = "GameTableViewCell"
+}
+

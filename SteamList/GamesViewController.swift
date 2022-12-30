@@ -11,7 +11,6 @@ class GamesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let cellId = "GameTableViewCell"
     private var games: [Game] = [
     Game(title: "Dota 2", isFavorite: false),
     Game(title: "League of Legends", isFavorite: false),
@@ -55,7 +54,7 @@ class GamesViewController: UIViewController {
     private func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib.init(nibName: cellId, bundle: nil), forCellReuseIdentifier: cellId)
+        tableView.register(UINib.init(nibName: GameTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: GameTableViewCell.cellId)
     }
     
 
@@ -70,7 +69,7 @@ extension GamesViewController: UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for:  indexPath) as! GameTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: GameTableViewCell.cellId, for:  indexPath) as! GameTableViewCell
         let game = games[indexPath.row]
         cell.cellTitle.text = "\(game.title)"
         if game.isFavorite {
