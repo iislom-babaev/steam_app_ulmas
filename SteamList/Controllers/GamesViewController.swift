@@ -28,6 +28,7 @@ class GamesViewController: UIViewController {
         tableView.register(UINib.init(nibName: GameTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: GameTableViewCell.cellId)
     }
     
+    
 
 
 }
@@ -52,9 +53,21 @@ extension GamesViewController: UITableViewDataSource {
         return cell
     }
     
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         let gameObj = MockData.games[indexPath.row]
+         
+         guard let gameDetailsViewController = self.storyboard?.instantiateViewController(identifier: "GameDetailsViewController", creator: {coder -> GameDetailsViewController? in
+            GameDetailsViewController(coder: coder, game: gameObj)
+         }) else {
+             return
+         }
+             
+        self.navigationController?.pushViewController(gameDetailsViewController, animated: true)
+        
+    }
+    
     
 }
 
 extension GamesViewController: UITableViewDelegate {
-    
 }

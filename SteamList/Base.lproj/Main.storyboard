@@ -78,6 +78,21 @@
             </objects>
             <point key="canvasLocation" x="-906.10687022900754" y="148.59154929577466"/>
         </scene>
+        <!--Game Details View Controller-->
+        <scene sceneID="bD3-wy-MeG">
+            <objects>
+                <viewController storyboardIdentifier="GameDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="l2W-63-fsU" customClass="GameDetailsViewController" customModule="SteamList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NSL-Sy-RWi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Auc-xL-PpR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDd-Kg-yO8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-906" y="812"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="I22-Ub-DD0">
             <objects>
@@ -185,6 +200,9 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.4779999852180481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

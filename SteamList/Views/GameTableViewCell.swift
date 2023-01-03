@@ -29,6 +29,7 @@ class GameTableViewCell: UITableViewCell {
                  cellTitle.font = .systemFont(ofSize: 17)
              }
     }
+    
 }
 
 extension GameTableViewCell {
