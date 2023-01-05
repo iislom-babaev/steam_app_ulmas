@@ -34,6 +34,7 @@
                 <constraints>
                     <constraint firstItem="mri-JB-Fmx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="41U-SB-e2w"/>
                     <constraint firstItem="pS2-vZ-tVq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="YmQ-dM-7wc"/>
+                    <constraint firstAttribute="bottom" secondItem="mri-JB-Fmx" secondAttribute="bottom" constant="11" id="j5w-Su-RRY"/>
                     <constraint firstItem="pS2-vZ-tVq" firstAttribute="centerY" secondItem="mri-JB-Fmx" secondAttribute="centerY" id="jpz-lS-RLn"/>
                     <constraint firstAttribute="trailing" secondItem="pS2-vZ-tVq" secondAttribute="trailing" constant="16" id="ol6-o8-1Dz"/>
                     <constraint firstItem="mri-JB-Fmx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="zhX-X8-4vM"/>
@@ -44,7 +45,7 @@
                 <outlet property="price" destination="pS2-vZ-tVq" id="aD1-LT-1zm"/>
                 <outlet property="title" destination="mri-JB-Fmx" id="kb7-sw-Tmt"/>
             </connections>
-            <point key="canvasLocation" x="23" y="21"/>
+            <point key="canvasLocation" x="22.900763358778626" y="20.422535211267608"/>
         </tableViewCell>
     </objects>
 </document>

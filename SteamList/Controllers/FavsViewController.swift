@@ -14,6 +14,19 @@ class FavsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        configureLeftBarButton()
+        configureRightBarButton()
+    }
+    
+    
+    private func configureRightBarButton() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: nil)
+        self.navigationItem.rightBarButtonItem?.tintColor = .white
+    }
+    
+    private func configureLeftBarButton() {
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Sort", style: .plain, target: self, action: nil)
+        self.navigationItem.leftBarButtonItem?.tintColor = .white
     }
     
     
