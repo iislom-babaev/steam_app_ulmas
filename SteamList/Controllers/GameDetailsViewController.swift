@@ -14,16 +14,6 @@ class GameDetailsViewController: UIViewController {
     @IBOutlet weak var favIcon: UIImageView!
     @IBOutlet weak var gameName: UILabel!
     
-    fileprivate func configOutlets() {
-        self.title = game.title
-        gameName.text = game.title
-        if game.isFavorite {
-            favIcon.image = UIImage(systemName: "star.fill")
-        } else {
-            favIcon.image = UIImage(systemName: "star")
-            
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,5 +27,15 @@ class GameDetailsViewController: UIViewController {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    fileprivate func configOutlets() {
+        self.title = game.title
+        gameName.text = game.title
+        if game.isFavorite {
+            favIcon.image = UIImage(systemName: "star.fill")
+        } else {
+            favIcon.image = UIImage(systemName: "star")
+        }
     }
 }

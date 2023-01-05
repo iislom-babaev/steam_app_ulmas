@@ -65,9 +65,7 @@ extension GamesViewController: UITableViewDataSource {
          }) else {return}
              
         self.navigationController?.pushViewController(gameDetailsViewController, animated: true)
-        
     }
-    
     
 }
 
