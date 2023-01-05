@@ -9,8 +9,8 @@ import UIKit
 
 class GameDetailsViewController: UIViewController {
  
-    private let game: Game
-    
+    var game: Game!
+        
     @IBOutlet weak var favIcon: UIImageView!
     @IBOutlet weak var gameName: UILabel!
     
@@ -20,14 +20,6 @@ class GameDetailsViewController: UIViewController {
         configOutlets()
     }
     
-    init?(coder: NSCoder, game: Game) {
-        self.game = game
-        super.init(coder: coder)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     fileprivate func configOutlets() {
         self.title = game.title

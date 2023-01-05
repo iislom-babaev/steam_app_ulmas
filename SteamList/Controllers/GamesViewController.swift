@@ -52,10 +52,11 @@ extension GamesViewController: UITableViewDataSource {
     
     
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         navigate(tableView, indexPath)
+         let game = adjustIsFavorite(tableView, indexPath)
+         navigateToGameDetails(tableView, indexPath, game)
     }
     
-    func navigate(_ tableView: UITableView,  _ indexPath: IndexPath) {
+    func adjustIsFavorite(_ tableView: UITableView,_ indexPath: IndexPath) -> Game {
          var gameObj = MockData.games[indexPath.row]
              let cell = tableView.cellForRow(at: indexPath)  as! GameTableViewCell
              if cell.cellIcon.imageView?.image == UIImage(systemName: "star") {
@@ -63,12 +64,21 @@ extension GamesViewController: UITableViewDataSource {
              } else {
                  gameObj.isFavorite = true
              }
-         guard let gameDetailsViewController = self.storyboard?.instantiateViewController(identifier: "GameDetailsViewController",
-        creator: {coder -> GameDetailsViewController? in
-              GameDetailsViewController(coder: coder, game: gameObj)
-         }) else {return}
-        self.navigationController?.pushViewController(gameDetailsViewController, animated: true)
+        
+        return gameObj
     }
+    
+    func navigateToGameDetails(_ tableView: UITableView,  _ indexPath: IndexPath,_ game: Game) {
+        guard let gameDetailsViewController = storyboard?.instantiateViewController(withIdentifier: "GameDetailsViewController") as? GameDetailsViewController else {
+             assertionFailure("View controller with `GameDetailsViewController` identifier could not be instantiated from storyboard")
+             return
+           }
+
+           gameDetailsViewController.game = game
+           navigationController?.pushViewController(gameDetailsViewController, animated: true)
+    }
+    
+    
     
 }
 
