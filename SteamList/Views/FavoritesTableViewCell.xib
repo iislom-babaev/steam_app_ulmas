@@ -24,8 +24,8 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pS2-vZ-tVq">
-                        <rect key="frame" x="270" y="11" width="34" height="23"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="268.66666666666669" y="11" width="35.333333333333314" height="23"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -40,6 +40,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="price" destination="pS2-vZ-tVq" id="aD1-LT-1zm"/>
+                <outlet property="title" destination="mri-JB-Fmx" id="kb7-sw-Tmt"/>
+            </connections>
             <point key="canvasLocation" x="23" y="21"/>
         </tableViewCell>
     </objects>

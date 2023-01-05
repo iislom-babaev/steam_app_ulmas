@@ -31,11 +31,19 @@ extension FavsViewController: UITableViewDelegate {
 
 extension FavsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return MockData.favorites.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: FavoritesTableViewCell.cellId, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: FavoritesTableViewCell.cellId, for: indexPath) as! FavoritesTableViewCell
+        let favorite = MockData.favorites[indexPath.row]
+        cell.title.text = favorite.title
+        cell.price.text = favorite.price == 0 ? "Free" : "$\(favorite.price)"
+        
+        if favorite.droppedPrice != 0 {
+            cell.price.textColor = .green
+            cell.price.text!  +=  " (-$\(favorite.droppedPrice))"
+        }
         return cell
     }
     
