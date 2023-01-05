@@ -13,6 +13,7 @@ class GameDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = game.title
     }
     
     init?(coder: NSCoder, game: Game) {

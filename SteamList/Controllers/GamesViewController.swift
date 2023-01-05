@@ -17,6 +17,7 @@ class GamesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         configureTableView()
     }
     
@@ -27,10 +28,6 @@ class GamesViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UINib.init(nibName: GameTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: GameTableViewCell.cellId)
     }
-    
-    
-
-
 }
 
 extension GamesViewController: UITableViewDataSource {
@@ -55,7 +52,6 @@ extension GamesViewController: UITableViewDataSource {
     
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
          let gameObj = MockData.games[indexPath.row]
-         
          guard let gameDetailsViewController = self.storyboard?.instantiateViewController(identifier: "GameDetailsViewController", creator: {coder -> GameDetailsViewController? in
             GameDetailsViewController(coder: coder, game: gameObj)
          }) else {
