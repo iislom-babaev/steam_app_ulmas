@@ -254,6 +254,10 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="393" height="1200"/>
+                    <connections>
+                        <outlet property="favIcon" destination="gdA-fx-zSp" id="K3w-1F-ztj"/>
+                        <outlet property="gameName" destination="bMb-7n-hi5" id="0ZO-vM-5j7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BC9-VW-nIw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

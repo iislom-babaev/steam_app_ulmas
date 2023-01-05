@@ -11,9 +11,23 @@ class GameDetailsViewController: UIViewController {
  
     private let game: Game
     
+    @IBOutlet weak var favIcon: UIImageView!
+    @IBOutlet weak var gameName: UILabel!
+    
+    fileprivate func configOutlets() {
+        self.title = game.title
+        gameName.text = game.title
+        if game.isFavorite {
+            favIcon.image = UIImage(systemName: "star.fill")
+        } else {
+            favIcon.image = UIImage(systemName: "star")
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = game.title
+        configOutlets()
     }
     
     init?(coder: NSCoder, game: Game) {

@@ -50,13 +50,19 @@ extension GamesViewController: UITableViewDataSource {
         return cell
     }
     
+    
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         let gameObj = MockData.games[indexPath.row]
-         guard let gameDetailsViewController = self.storyboard?.instantiateViewController(identifier: "GameDetailsViewController", creator: {coder -> GameDetailsViewController? in
-            GameDetailsViewController(coder: coder, game: gameObj)
-         }) else {
-             return
-         }
+         var gameObj = MockData.games[indexPath.row]
+         guard let gameDetailsViewController = self.storyboard?.instantiateViewController(identifier: "GameDetailsViewController",
+        creator: {coder -> GameDetailsViewController? in
+             let cell = tableView.cellForRow(at: indexPath)  as! GameTableViewCell
+             if cell.cellIcon.imageView?.image == UIImage(systemName: "star") {
+                 gameObj.isFavorite = false
+             } else {
+                 gameObj.isFavorite = true
+             }
+        return GameDetailsViewController(coder: coder, game: gameObj)
+         }) else {return}
              
         self.navigationController?.pushViewController(gameDetailsViewController, animated: true)
         
