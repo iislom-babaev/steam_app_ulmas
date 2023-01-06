@@ -8,18 +8,15 @@
 import UIKit
 
 class GameDetailsViewController: UIViewController {
- 
+    
     var game: Game!
-        
     @IBOutlet weak var favIcon: UIImageView!
     @IBOutlet weak var gameName: UILabel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configOutlets()
     }
-    
     
     fileprivate func configOutlets() {
         self.title = game.title

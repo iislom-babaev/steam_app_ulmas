@@ -13,7 +13,5 @@ class NewsViewController: UIViewController {
         super.viewDidLoad()
 
     }
-    
-
 
 }
