@@ -8,7 +8,7 @@
 import UIKit
 
 class FavsViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -17,7 +17,6 @@ class FavsViewController: UIViewController {
         configureLeftBarButton()
         configureRightBarButton()
     }
-    
     
     private func configureRightBarButton() {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: nil)
@@ -29,17 +28,14 @@ class FavsViewController: UIViewController {
         self.navigationItem.leftBarButtonItem?.tintColor = .white
     }
     
-    
     private func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib.init(nibName: FavoritesTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: FavoritesTableViewCell.cellId)
     }
-
 }
 
 extension FavsViewController: UITableViewDelegate {
-    
 }
 
 extension FavsViewController: UITableViewDataSource {
@@ -52,13 +48,10 @@ extension FavsViewController: UITableViewDataSource {
         let favorite = MockData.favorites[indexPath.row]
         cell.title.text = favorite.title
         cell.price.text = favorite.price == 0 ? "Free" : "$\(favorite.price)"
-        
         if favorite.droppedPrice != 0 {
             cell.price.textColor = .green
             cell.price.text!  +=  " (-$\(favorite.droppedPrice))"
         }
         return cell
     }
-    
-    
 }
