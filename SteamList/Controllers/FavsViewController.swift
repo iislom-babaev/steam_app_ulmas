@@ -8,12 +8,8 @@
 import UIKit
 
 class FavsViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-    
-
-
 }
