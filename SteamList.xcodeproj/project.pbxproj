@@ -20,7 +20,7 @@
 		C0FF466A295ABFF700931949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FF4669295ABFF700931949 /* Assets.xcassets */; };
 		C0FF466D295ABFF700931949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FF466B295ABFF700931949 /* LaunchScreen.storyboard */; };
 		C0FF4675295B139800931949 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4674295B139800931949 /* GamesViewController.swift */; };
-		C0FF4677295B13A700931949 /* FavsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4676295B13A700931949 /* FavsViewController.swift */; };
+		C0FF4677295B13A700931949 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4676295B13A700931949 /* FavoritesViewController.swift */; };
 		C0FF4679295B13B300931949 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4678295B13B300931949 /* NewsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		C0FF466C295ABFF700931949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0FF466E295ABFF700931949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0FF4674295B139800931949 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
-		C0FF4676295B13A700931949 /* FavsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsViewController.swift; sourceTree = "<group>"; };
+		C0FF4676295B13A700931949 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		C0FF4678295B13B300931949 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				C0FF4674295B139800931949 /* GamesViewController.swift */,
-				C0FF4676295B13A700931949 /* FavsViewController.swift */,
+				C0FF4676295B13A700931949 /* FavoritesViewController.swift */,
 				C0FF4678295B13B300931949 /* NewsViewController.swift */,
 			);
 			path = Controllers;
@@ -204,7 +204,7 @@
 				C07CCF0E2966CC8500DAF8AA /* FavoritesTableViewCell.swift in Sources */,
 				C0FF4675295B139800931949 /* GamesViewController.swift in Sources */,
 				C07E48CE295EF245009D18BB /* GameModel.swift in Sources */,
-				C0FF4677295B13A700931949 /* FavsViewController.swift in Sources */,
+				C0FF4677295B13A700931949 /* FavoritesViewController.swift in Sources */,
 				C0FF4679295B13B300931949 /* NewsViewController.swift in Sources */,
 				C07E48D0295EF2BA009D18BB /* MockData.swift in Sources */,
 				C0FF4663295ABFF600931949 /* SceneDelegate.swift in Sources */,

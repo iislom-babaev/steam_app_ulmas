@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FavsViewController: UIViewController {
+final class FavoritesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -35,10 +35,10 @@ class FavsViewController: UIViewController {
     }
 }
 
-extension FavsViewController: UITableViewDelegate {
+extension FavoritesViewController: UITableViewDelegate {
 }
 
-extension FavsViewController: UITableViewDataSource {
+extension FavoritesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return MockData.favorites.count
     }

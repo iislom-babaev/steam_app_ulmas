@@ -30,7 +30,7 @@
         <!--Favorites-->
         <scene sceneID="krd-eI-4Fi">
             <objects>
-                <viewController id="FXI-jZ-a95" customClass="FavsViewController" customModule="SteamList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FXI-jZ-a95" customClass="FavoritesViewController" customModule="SteamList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dPh-yZ-vwJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
