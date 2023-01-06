@@ -42,7 +42,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="j6t-rP-Vp5"/>
-                        <color key="backgroundColor" red="0.28627450980392155" green="0.65098039215686276" blue="1" alpha="0.55000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="CPn-kK-Lle" firstAttribute="trailing" secondItem="j6t-rP-Vp5" secondAttribute="trailing" id="KBC-ap-trt"/>
                             <constraint firstItem="CPn-kK-Lle" firstAttribute="bottom" secondItem="j6t-rP-Vp5" secondAttribute="bottom" id="W8M-kY-DsX"/>
@@ -134,7 +134,7 @@
             <objects>
                 <navigationController id="gG5-xA-2TI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="eyn-En-CtK"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZSb-cb-8M8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="ZSb-cb-8M8">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
