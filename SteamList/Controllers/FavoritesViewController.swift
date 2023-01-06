@@ -19,13 +19,13 @@ final class FavoritesViewController: UIViewController {
     }
     
     private func configureRightBarButton() {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: nil)
-        self.navigationItem.rightBarButtonItem?.tintColor = .white
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: nil)
+        navigationItem.rightBarButtonItem?.tintColor = .white
     }
     
     private func configureLeftBarButton() {
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Sort", style: .plain, target: self, action: nil)
-        self.navigationItem.leftBarButtonItem?.tintColor = .white
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Sort", style: .plain, target: self, action: nil)
+        navigationItem.leftBarButtonItem?.tintColor = .white
     }
     
     private func configureTableView() {
@@ -40,12 +40,12 @@ extension FavoritesViewController: UITableViewDelegate {
 
 extension FavoritesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return MockData.favorites.count
+        return MockData.games.filter {game in game.isFavorite}.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FavoritesTableViewCell.cellId, for: indexPath) as! FavoritesTableViewCell
-        let favorite = MockData.favorites[indexPath.row]
+        let favorite = MockData.games.filter{game in game.isFavorite}[indexPath.row]
         cell.title.text = favorite.title
         cell.price.text = favorite.price == 0 ? "Free" : "$\(favorite.price)"
         if favorite.droppedPrice != 0 {

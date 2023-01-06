@@ -10,9 +10,13 @@ import Foundation
 struct Game {
     let title: String
     var isFavorite: Bool
+    let price: Double
+    let droppedPrice: Double
     
-    init(title: String, isFavorite: Bool) {
+    init(title: String, isFavorite: Bool, price: Double, droppedPrice: Double) {
         self.title = title
         self.isFavorite = isFavorite
+        self.price = price
+        self.droppedPrice = droppedPrice
     }
 }

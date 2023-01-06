@@ -11,7 +11,6 @@
 		C0138113295D6815007B257F /* GameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0138111295D6815007B257F /* GameTableViewCell.xib */; };
 		C07CCF0E2966CC8500DAF8AA /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07CCF0C2966CC8500DAF8AA /* FavoritesTableViewCell.swift */; };
 		C07CCF0F2966CC8500DAF8AA /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C07CCF0D2966CC8500DAF8AA /* FavoritesTableViewCell.xib */; };
-		C07CCF112966D79300DAF8AA /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07CCF102966D79300DAF8AA /* FavoriteModel.swift */; };
 		C07E48CE295EF245009D18BB /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07E48CD295EF245009D18BB /* GameModel.swift */; };
 		C07E48D0295EF2BA009D18BB /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07E48CF295EF2BA009D18BB /* MockData.swift */; };
 		C0FF4661295ABFF600931949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4660295ABFF600931949 /* AppDelegate.swift */; };
@@ -29,7 +28,6 @@
 		C0138111295D6815007B257F /* GameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameTableViewCell.xib; sourceTree = "<group>"; };
 		C07CCF0C2966CC8500DAF8AA /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		C07CCF0D2966CC8500DAF8AA /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
-		C07CCF102966D79300DAF8AA /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
 		C07E48CD295EF245009D18BB /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		C07E48CF295EF2BA009D18BB /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		C0FF465D295ABFF600931949 /* SteamList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteamList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				C07E48CD295EF245009D18BB /* GameModel.swift */,
-				C07CCF102966D79300DAF8AA /* FavoriteModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,7 +197,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0FF4661295ABFF600931949 /* AppDelegate.swift in Sources */,
-				C07CCF112966D79300DAF8AA /* FavoriteModel.swift in Sources */,
 				C07CCF0E2966CC8500DAF8AA /* FavoritesTableViewCell.swift in Sources */,
 				C0FF4675295B139800931949 /* GamesViewController.swift in Sources */,
 				C07E48CE295EF245009D18BB /* GameModel.swift in Sources */,
