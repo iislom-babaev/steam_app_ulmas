@@ -8,8 +8,9 @@
 import UIKit
 
 class NewsViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
+    let newsList = MockData.news
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +31,13 @@ extension NewsViewController: UITableViewDelegate {
 extension NewsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return newsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: NewsTableViewCell.cellId, for: indexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: NewsTableViewCell.cellId, for: indexPath) as! NewsTableViewCell
+        let news = newsList[indexPath.row]
+        cell.configCell(with: news)
         return cell
     }
 }

@@ -59,10 +59,10 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <connections>
-                <outlet property="date" destination="VCf-yy-TC3" id="ons-Jz-RHD"/>
-                <outlet property="developer" destination="Q1w-8m-WQJ" id="6ZQ-ce-Mrl"/>
-                <outlet property="gameName" destination="8hh-Y9-GeO" id="q8I-Mv-uta"/>
-                <outlet property="title" destination="8hh-Y9-GeO" id="bwH-X9-Zs0"/>
+                <outlet property="date" destination="VCf-yy-TC3" id="PHR-X3-aru"/>
+                <outlet property="developer" destination="Q1w-8m-WQJ" id="l3D-iM-DJF"/>
+                <outlet property="gameName" destination="okt-mM-uMh" id="vew-CA-1v3"/>
+                <outlet property="title" destination="8hh-Y9-GeO" id="cWb-V3-QKO"/>
             </connections>
             <point key="canvasLocation" x="-147" y="34"/>
         </tableViewCell>
