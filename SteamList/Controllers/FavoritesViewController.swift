@@ -10,6 +10,7 @@ import UIKit
 final class FavoritesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    private let games = MockData.games
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,18 +41,14 @@ extension FavoritesViewController: UITableViewDelegate {
 
 extension FavoritesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return MockData.games.filter {game in game.isFavorite}.count
+        return games.filter {game in game.isFavorite}.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FavoritesTableViewCell.cellId, for: indexPath) as! FavoritesTableViewCell
-        let favorite = MockData.games.filter{game in game.isFavorite}[indexPath.row]
-        cell.title.text = favorite.title
-        cell.price.text = favorite.price == 0 ? "Free" : "$\(favorite.price)"
-        if favorite.droppedPrice != 0 {
-            cell.price.textColor = .green
-            cell.price.text!  +=  " (-$\(favorite.droppedPrice))"
-        }
+        let favorite = games.filter{game in game.isFavorite}[indexPath.row]
+        cell.configureCell(with: favorite)
+        
         return cell
     }
 }

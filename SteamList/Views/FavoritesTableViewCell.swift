@@ -17,6 +17,15 @@ class FavoritesTableViewCell: UITableViewCell {
         selectionStyle = .none
     }
     
+    func configureCell(with favGame: Game) {
+        self.title.text = favGame.title
+        self.price.text = favGame.price == 0 ? "Free" : "$\(favGame.price)"
+        if favGame.droppedPrice != 0 {
+            self.price.textColor = .green
+            self.price.text!  +=  " (-$\(favGame.droppedPrice))"
+        }
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
