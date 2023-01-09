@@ -12,7 +12,6 @@ class GameTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        selectionStyle = .none
     }
     @IBOutlet weak var cellTitle: UILabel!
     

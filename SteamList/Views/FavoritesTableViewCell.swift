@@ -14,7 +14,6 @@ class FavoritesTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        selectionStyle = .none
     }
     
     func configureCell(with favGame: Game) {
