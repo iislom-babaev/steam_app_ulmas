@@ -20,7 +20,13 @@ class NewsTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+    }
+    
+    func configCell(with news: News) {
+        date.text = news.date
+        title.text = news.title
+        developer.text = news.developer
+        gameName.text = news.gameName
     }
 }
 
