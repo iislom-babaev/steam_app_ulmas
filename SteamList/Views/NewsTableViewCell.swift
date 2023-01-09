@@ -22,5 +22,8 @@ class NewsTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
-    
+}
+
+extension NewsTableViewCell {
+    static let cellId = "NewsTableViewCell"
 }
