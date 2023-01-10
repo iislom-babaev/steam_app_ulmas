@@ -16,11 +16,28 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AOM-h7-LDM">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.28627450980392155" green="0.65098039215686276" blue="1" alpha="0.54595656622023814" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AOM-h7-LDM" secondAttribute="bottom" id="Bkn-Lg-gM4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AOM-h7-LDM" secondAttribute="trailing" id="SYF-F3-O39"/>
+                            <constraint firstItem="AOM-h7-LDM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="azT-rc-tki"/>
+                            <constraint firstItem="AOM-h7-LDM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uLI-3a-MwB"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="News" image="book.fill" catalog="system" id="51G-o9-Fs5"/>
                     <navigationItem key="navigationItem" title="News" id="EwU-hS-0ed"/>
+                    <connections>
+                        <outlet property="tableView" destination="AOM-h7-LDM" id="RH8-aM-Ehq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -339,8 +356,7 @@
             <objects>
                 <navigationController id="lCM-8H-3z3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="NaO-bI-17i"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nvx-5Q-ZS0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="nvx-5Q-ZS0">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
