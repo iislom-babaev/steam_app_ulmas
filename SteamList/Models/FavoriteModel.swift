@@ -1,21 +1,19 @@
 //
-//  Game.swift
+//  FavoriteModel.swift
 //  SteamList
 //
-//  Created by Macbook on 30/12/2022.
+//  Created by Macbook on 05/01/2023.
 //
 
 import Foundation
 
-struct Game {
+class FavoriteModel {
     let title: String
-    var isFavorite: Bool
     let price: Double
     let droppedPrice: Double
     
-    init(title: String, isFavorite: Bool, price: Double, droppedPrice: Double) {
+    init(title: String, price: Double, droppedPrice: Double) {
         self.title = title
-        self.isFavorite = isFavorite
         self.price = price
         self.droppedPrice = droppedPrice
     }
