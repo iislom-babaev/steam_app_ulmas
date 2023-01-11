@@ -58,13 +58,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="734"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ur-cv-RT8">
-                                                <rect key="frame" x="10" y="7" width="42" height="21"/>
+                                                <rect key="frame" x="10" y="7" width="48" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nR-eY-f3x">
-                                                <rect key="frame" x="10" y="36" width="39" height="20"/>
+                                                <rect key="frame" x="10" y="36" width="48" height="20"/>
                                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -108,12 +108,15 @@
                                             <constraint firstItem="QtG-cN-B6m" firstAttribute="top" secondItem="Ef6-d8-F02" secondAttribute="top" constant="7" id="786-B8-aXS"/>
                                             <constraint firstAttribute="trailing" secondItem="mMI-3r-vmL" secondAttribute="trailing" constant="8" id="87b-Uc-cbv"/>
                                             <constraint firstItem="NH7-UU-wgW" firstAttribute="leading" secondItem="Ef6-d8-F02" secondAttribute="leading" constant="12" id="8nk-t1-wCr"/>
+                                            <constraint firstItem="5nR-eY-f3x" firstAttribute="trailing" secondItem="3Ur-cv-RT8" secondAttribute="trailing" id="Fb6-bd-hji"/>
+                                            <constraint firstItem="QtG-cN-B6m" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3Ur-cv-RT8" secondAttribute="trailing" constant="8" symbolic="YES" id="KOP-Nn-2dQ"/>
                                             <constraint firstItem="5nR-eY-f3x" firstAttribute="leading" secondItem="3Ur-cv-RT8" secondAttribute="leading" id="PUE-Mi-liJ"/>
                                             <constraint firstItem="Nas-16-QMO" firstAttribute="leading" secondItem="5nR-eY-f3x" secondAttribute="leading" constant="-2" id="Pju-gP-N3Y"/>
                                             <constraint firstItem="yuA-qW-HAb" firstAttribute="leading" secondItem="Ef6-d8-F02" secondAttribute="leading" constant="8" id="RFZ-ns-PFH"/>
                                             <constraint firstItem="Nas-16-QMO" firstAttribute="top" secondItem="5nR-eY-f3x" secondAttribute="bottom" constant="8" id="SFp-F3-rIW"/>
                                             <constraint firstItem="3Ur-cv-RT8" firstAttribute="top" secondItem="Ef6-d8-F02" secondAttribute="top" constant="7" id="UMT-mM-A19"/>
                                             <constraint firstAttribute="trailing" secondItem="NH7-UU-wgW" secondAttribute="trailing" constant="12" id="XJs-Fu-jRh"/>
+                                            <constraint firstItem="Nas-16-QMO" firstAttribute="trailing" secondItem="5nR-eY-f3x" secondAttribute="trailing" id="Znr-Ic-8eH"/>
                                             <constraint firstItem="3Ur-cv-RT8" firstAttribute="leading" secondItem="Ef6-d8-F02" secondAttribute="leading" constant="10" id="cCY-6o-LQ8"/>
                                             <constraint firstItem="5nR-eY-f3x" firstAttribute="top" secondItem="3Ur-cv-RT8" secondAttribute="bottom" constant="8" id="hQd-mT-E5E"/>
                                             <constraint firstAttribute="trailing" secondItem="yuA-qW-HAb" secondAttribute="trailing" constant="12" id="hpJ-vH-FQo"/>
@@ -348,6 +351,7 @@
                                         <color key="backgroundColor" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="M6K-1V-L4C" firstAttribute="leading" secondItem="Zb9-AF-NoR" secondAttribute="leading" constant="8" id="0Bd-AM-XuM"/>
+                                            <constraint firstItem="Yki-Li-TqR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="M6K-1V-L4C" secondAttribute="trailing" constant="8" symbolic="YES" id="4Kn-Sq-Lyn"/>
                                             <constraint firstItem="y3d-xH-QU3" firstAttribute="leading" secondItem="Zb9-AF-NoR" secondAttribute="leading" constant="8" id="5iV-mO-MNM"/>
                                             <constraint firstAttribute="trailing" secondItem="gdA-fx-zSp" secondAttribute="trailing" constant="20" symbolic="YES" id="6g9-lf-VJW"/>
                                             <constraint firstItem="mBe-ms-Yk8" firstAttribute="top" secondItem="y3d-xH-QU3" secondAttribute="bottom" constant="20" id="B5L-t1-m2C"/>
