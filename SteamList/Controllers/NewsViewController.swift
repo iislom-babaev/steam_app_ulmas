@@ -14,6 +14,7 @@ class NewsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         configureTableView()
     }
     
@@ -25,7 +26,6 @@ class NewsViewController: UIViewController {
 }
 
 extension NewsViewController: UITableViewDelegate {
-    
 }
 
 extension NewsViewController: UITableViewDataSource {
@@ -39,5 +39,19 @@ extension NewsViewController: UITableViewDataSource {
         let news = newsList[indexPath.row]
         cell.configCell(with: news)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let news = newsList[indexPath.row]
+        navigateToNewsDetails(with: news)
+    }
+    
+    func navigateToNewsDetails(with news: News) {
+        guard let controller = storyboard?.instantiateViewController(withIdentifier: NewsDetailsViewController.identifier) as? NewsDetailsViewController else {
+            assertionFailure("\(NewsDetailsViewController.identifier) cannot be instantiated")
+            return
+        }
+        controller.news = news
+        navigationController?.pushViewController(controller, animated: true)
     }
 }

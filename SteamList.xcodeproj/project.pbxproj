@@ -16,6 +16,7 @@
 		C08C8D35296828BD00DB0FE3 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08C8D33296828BD00DB0FE3 /* NewsTableViewCell.swift */; };
 		C08C8D36296828BD00DB0FE3 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C08C8D34296828BD00DB0FE3 /* NewsTableViewCell.xib */; };
 		C0A2C98F296C1C6F00199458 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A2C98E296C1C6F00199458 /* NewsModel.swift */; };
+		C0BE9CD3296D60B200661385 /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE9CD2296D60B200661385 /* NewsDetailsViewController.swift */; };
 		C0E2893C2963DDEB004EC42F /* GameDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2893B2963DDEB004EC42F /* GameDetailsViewController.swift */; };
 		C0FF4661295ABFF600931949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4660295ABFF600931949 /* AppDelegate.swift */; };
 		C0FF4663295ABFF600931949 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4662295ABFF600931949 /* SceneDelegate.swift */; };
@@ -37,6 +38,7 @@
 		C08C8D33296828BD00DB0FE3 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		C08C8D34296828BD00DB0FE3 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		C0A2C98E296C1C6F00199458 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		C0BE9CD2296D60B200661385 /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
 		C0E2893B2963DDEB004EC42F /* GameDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailsViewController.swift; sourceTree = "<group>"; };
 		C0FF465D295ABFF600931949 /* SteamList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteamList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FF4660295ABFF600931949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				C0FF4676295B13A700931949 /* FavoritesViewController.swift */,
 				C0FF4678295B13B300931949 /* NewsViewController.swift */,
 				C0E2893B2963DDEB004EC42F /* GameDetailsViewController.swift */,
+				C0BE9CD2296D60B200661385 /* NewsDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -81,7 +84,6 @@
 				C08C8D34296828BD00DB0FE3 /* NewsTableViewCell.xib */,
 				C07CCF0C2966CC8500DAF8AA /* FavoritesTableViewCell.swift */,
 				C07CCF0D2966CC8500DAF8AA /* FavoritesTableViewCell.xib */,
-
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +219,7 @@
 				C07E48CE295EF245009D18BB /* GameModel.swift in Sources */,
 				C0A2C98F296C1C6F00199458 /* NewsModel.swift in Sources */,
 				C0FF4677295B13A700931949 /* FavoritesViewController.swift in Sources */,
+				C0BE9CD3296D60B200661385 /* NewsDetailsViewController.swift in Sources */,
 				C0FF4679295B13B300931949 /* NewsViewController.swift in Sources */,
 				C07E48D0295EF2BA009D18BB /* MockData.swift in Sources */,
 				C0FF4663295ABFF600931949 /* SceneDelegate.swift in Sources */,
