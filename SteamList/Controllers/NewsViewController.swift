@@ -47,7 +47,8 @@ extension NewsViewController: UITableViewDataSource {
     }
     
     func navigateToNewsDetails(with news: News) {
-        guard let controller = storyboard?.instantiateViewController(withIdentifier: NewsDetailsViewController.identifier) as? NewsDetailsViewController else {
+        let storyboard = UIStoryboard(name: "NewsDetails", bundle: nil)
+        guard let controller = storyboard.instantiateViewController(withIdentifier: NewsDetailsViewController.identifier) as? NewsDetailsViewController else {
             assertionFailure("\(NewsDetailsViewController.identifier) cannot be instantiated")
             return
         }

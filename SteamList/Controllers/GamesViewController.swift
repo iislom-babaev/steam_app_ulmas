@@ -61,7 +61,8 @@ extension GamesViewController: UITableViewDataSource {
     }
     
     func navigateToGameDetails(_ tableView: UITableView,  _ indexPath: IndexPath,_ game: Game) {
-        guard let gameDetailsViewController = storyboard?.instantiateViewController(withIdentifier: "GameDetailsViewController") as? GameDetailsViewController else {
+        let storyboard = UIStoryboard(name: "GameDetails", bundle: nil)
+        guard let gameDetailsViewController = storyboard.instantiateViewController(withIdentifier: "GameDetailsViewController") as? GameDetailsViewController else {
             assertionFailure("View controller with `GameDetailsViewController` identifier could not be instantiated from storyboard")
             return
         }

@@ -208,22 +208,6 @@
             </objects>
             <point key="canvasLocation" x="-906" y="-580"/>
         </scene>
-        <!--GameDetailsViewController-->
-        <scene sceneID="oup-0G-Bsr">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="GameDetailsViewController" storyboardName="GameDetails" referencedIdentifier="GameDetailsViewController" id="Nez-oF-sKT" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jd4-qT-rsA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-905" y="906"/>
-        </scene>
-        <!--NewsDetailsViewController-->
-        <scene sceneID="TS9-Qq-76a">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="NewsDetailsViewController" storyboardName="NewsDetails" referencedIdentifier="NewsDetailsViewController" id="1zb-ec-O1F" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ryy-E5-l8Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="451" y="906"/>
-        </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
