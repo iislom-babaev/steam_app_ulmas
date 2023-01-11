@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -19,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="734"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ef6-d8-F02">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="734"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="506.33333333333331"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ur-cv-RT8">
                                                 <rect key="frame" x="10" y="7" width="48" height="21"/>
@@ -84,6 +86,7 @@
                                             <constraint firstItem="3Ur-cv-RT8" firstAttribute="leading" secondItem="Ef6-d8-F02" secondAttribute="leading" constant="10" id="cCY-6o-LQ8"/>
                                             <constraint firstItem="5nR-eY-f3x" firstAttribute="top" secondItem="3Ur-cv-RT8" secondAttribute="bottom" constant="8" id="hQd-mT-E5E"/>
                                             <constraint firstAttribute="trailing" secondItem="yuA-qW-HAb" secondAttribute="trailing" constant="12" id="hpJ-vH-FQo"/>
+                                            <constraint firstAttribute="bottom" secondItem="mMI-3r-vmL" secondAttribute="bottom" constant="10" id="naU-PA-Ehl"/>
                                             <constraint firstItem="NH7-UU-wgW" firstAttribute="top" secondItem="yuA-qW-HAb" secondAttribute="bottom" constant="8" id="yS7-XM-pO4"/>
                                             <constraint firstAttribute="trailing" secondItem="QtG-cN-B6m" secondAttribute="trailing" constant="8" id="z8y-5f-4T3"/>
                                             <constraint firstItem="mMI-3r-vmL" firstAttribute="top" secondItem="NH7-UU-wgW" secondAttribute="bottom" constant="10" id="zrW-At-NRs"/>
