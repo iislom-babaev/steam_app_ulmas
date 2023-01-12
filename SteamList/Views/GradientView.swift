@@ -1,5 +1,5 @@
 //
-//  GradientTableView.swift
+//  GradientView.swift
 //  SteamList
 //
 //  Created by Macbook on 12/01/2023.
@@ -8,14 +8,13 @@
 import UIKit
 
 @IBDesignable
-class GradientTableView: UITableView {
-    
+class GradientView: UIView {
+
     @IBInspectable var firstColor: UIColor = UIColor.clear {
         didSet {
             updateView()
         }
     }
-    
     @IBInspectable var secondColor: UIColor = UIColor.clear {
         didSet {
             updateView()
