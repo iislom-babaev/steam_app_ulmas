@@ -12,13 +12,13 @@ class GradientView: UIView {
     
     @IBInspectable var firstColor: UIColor = UIColor.clear {
         didSet {
-            updateView()
+            updateLayer()
         }
     }
     
     @IBInspectable var secondColor: UIColor = UIColor.clear {
         didSet {
-            updateView()
+            updateLayer()
         }
     }
     
@@ -28,8 +28,10 @@ class GradientView: UIView {
         }
     }
     
-    func updateView() {
-        let layer = self.layer as! CAGradientLayer
+    func updateLayer() {
+        guard let layer = self.layer as? CAGradientLayer else {
+            return
+        }
         layer.colors = [firstColor.cgColor, secondColor.cgColor]
     }
 }
