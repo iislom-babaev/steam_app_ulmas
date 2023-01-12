@@ -13,14 +13,14 @@
         <scene sceneID="evk-5x-udD">
             <objects>
                 <viewController storyboardIdentifier="NewsDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e1b-2E-lfB" customClass="NewsDetailsViewController" customModule="SteamList" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YaI-pH-Uog">
+                    <view key="view" contentMode="scaleToFill" id="YaI-pH-Uog" customClass="GradientView" customModule="SteamList" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVO-zA-I15" customClass="GradientScrollView" customModule="SteamList" customModuleProvider="target">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVO-zA-I15">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="734"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ef6-d8-F02" customClass="GradientView" customModule="SteamList" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ef6-d8-F02">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="790.33333333333337"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ur-cv-RT8">
@@ -68,7 +68,7 @@
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="yuA-qW-HAb" firstAttribute="top" secondItem="Nas-16-QMO" secondAttribute="bottom" constant="8" id="2JA-n0-I88"/>
                                             <constraint firstItem="QtG-cN-B6m" firstAttribute="top" secondItem="Ef6-d8-F02" secondAttribute="top" constant="7" id="786-B8-aXS"/>
@@ -92,17 +92,9 @@
                                             <constraint firstItem="mMI-3r-vmL" firstAttribute="top" secondItem="NH7-UU-wgW" secondAttribute="bottom" constant="10" id="zrW-At-NRs"/>
                                             <constraint firstItem="mMI-3r-vmL" firstAttribute="leading" secondItem="Ef6-d8-F02" secondAttribute="leading" constant="8" id="zvc-oo-2L9"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                                <color key="value" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                                <color key="value" red="0.15686274510000001" green="0.28235294119999998" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Ef6-d8-F02" firstAttribute="width" secondItem="nVO-zA-I15" secondAttribute="width" id="A5r-30-a34"/>
                                     <constraint firstItem="Ef6-d8-F02" firstAttribute="height" secondItem="nVO-zA-I15" secondAttribute="height" priority="250" id="F3V-ch-P1Q"/>
@@ -111,14 +103,6 @@
                                     <constraint firstAttribute="trailing" secondItem="Ef6-d8-F02" secondAttribute="trailing" id="ve6-G8-H3s"/>
                                     <constraint firstItem="Ef6-d8-F02" firstAttribute="top" secondItem="nVO-zA-I15" secondAttribute="top" id="wIn-Wt-08N"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                        <color key="value" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                        <color key="value" red="0.15686274510000001" green="0.28235294119999998" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F2O-2z-da7"/>
@@ -129,6 +113,14 @@
                             <constraint firstItem="F2O-2z-da7" firstAttribute="trailing" secondItem="nVO-zA-I15" secondAttribute="trailing" id="KoZ-8D-aVd"/>
                             <constraint firstItem="F2O-2z-da7" firstAttribute="top" secondItem="nVO-zA-I15" secondAttribute="top" constant="59" id="ihW-s2-1Ur"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="0.15686274510000001" green="0.28235294119999998" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <size key="freeformSize" width="393" height="700"/>
                     <connections>

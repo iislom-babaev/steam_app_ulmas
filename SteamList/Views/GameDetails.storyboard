@@ -13,14 +13,14 @@
         <scene sceneID="x3T-Q2-kch">
             <objects>
                 <viewController storyboardIdentifier="GameDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jdY-gi-J0y" customClass="GameDetailsViewController" customModule="SteamList" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nv3-bi-mNL">
+                    <view key="view" contentMode="scaleToFill" id="nv3-bi-mNL" customClass="GradientView" customModule="SteamList" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6I-WQ-vpT" customClass="GradientScrollView" customModule="SteamList" customModuleProvider="target">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6I-WQ-vpT">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zb9-AF-NoR" customClass="GradientView" customModule="SteamList" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zb9-AF-NoR">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1075.3333333333333"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dota2" translatesAutoresizingMaskIntoConstraints="NO" id="xJ3-x6-sOx">
@@ -132,7 +132,7 @@
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="M6K-1V-L4C" firstAttribute="leading" secondItem="Zb9-AF-NoR" secondAttribute="leading" constant="8" id="0Bd-AM-XuM"/>
                                             <constraint firstAttribute="bottom" secondItem="hgI-hy-aU5" secondAttribute="bottom" constant="20" id="2hU-OM-4F4"/>
@@ -166,17 +166,9 @@
                                             <constraint firstItem="xJ3-x6-sOx" firstAttribute="top" secondItem="Zb9-AF-NoR" secondAttribute="top" id="s3q-X5-AHK"/>
                                             <constraint firstItem="mBe-ms-Yk8" firstAttribute="leading" secondItem="Zb9-AF-NoR" secondAttribute="leading" constant="8" id="stI-7t-u8H"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                                <color key="value" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                                <color key="value" red="0.15686274510000001" green="0.28235294119999998" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Zb9-AF-NoR" secondAttribute="bottom" id="8x2-eB-uyI"/>
                                     <constraint firstAttribute="trailing" secondItem="Zb9-AF-NoR" secondAttribute="trailing" id="NEV-3L-dmb"/>
@@ -185,14 +177,6 @@
                                     <constraint firstItem="Zb9-AF-NoR" firstAttribute="height" secondItem="H6I-WQ-vpT" secondAttribute="height" priority="250" id="dKV-Bd-7ow"/>
                                     <constraint firstItem="Zb9-AF-NoR" firstAttribute="leading" secondItem="H6I-WQ-vpT" secondAttribute="leading" id="ffM-rk-GKa"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                        <color key="value" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                        <color key="value" red="0.15686274510000001" green="0.28235294119999998" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nfj-0O-KaB"/>
@@ -203,6 +187,14 @@
                             <constraint firstAttribute="bottom" secondItem="H6I-WQ-vpT" secondAttribute="bottom" id="c0P-px-H2P"/>
                             <constraint firstItem="H6I-WQ-vpT" firstAttribute="trailing" secondItem="nfj-0O-KaB" secondAttribute="trailing" id="cGT-ZG-BHU"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="0.15686274510000001" green="0.28235294119999998" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <size key="freeformSize" width="393" height="1000"/>
                     <connections>
