@@ -1,5 +1,5 @@
 //
-//  GradientView.swift
+//  GradientScrollView.swift
 //  SteamList
 //
 //  Created by Macbook on 12/01/2023.
@@ -7,8 +7,7 @@
 
 import UIKit
 
-@IBDesignable
-class GradientView: UIView {
+class GradientScrollView: UIScrollView {
     
     @IBInspectable var firstColor: UIColor = UIColor.clear {
         didSet {
