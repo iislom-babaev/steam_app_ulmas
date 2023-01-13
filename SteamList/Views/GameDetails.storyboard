@@ -13,7 +13,7 @@
         <scene sceneID="x3T-Q2-kch">
             <objects>
                 <viewController storyboardIdentifier="GameDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jdY-gi-J0y" customClass="GameDetailsViewController" customModule="SteamList" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nv3-bi-mNL">
+                    <view key="view" contentMode="scaleToFill" id="nv3-bi-mNL" customClass="GradientView" customModule="SteamList" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -54,6 +54,7 @@
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free to Play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmw-pU-jw1">
                                                         <rect key="frame" x="58.66666666666665" y="14.000000000000028" width="89.333333333333314" height="21"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -65,7 +66,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="GOy-Ud-8f7" firstAttribute="centerY" secondItem="zmw-pU-jw1" secondAttribute="centerY" id="0V6-1y-SW3"/>
                                                     <constraint firstItem="GOy-Ud-8f7" firstAttribute="leading" secondItem="zmw-pU-jw1" secondAttribute="trailing" constant="10" id="Akf-Gd-bdt"/>
@@ -131,7 +132,7 @@
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="M6K-1V-L4C" firstAttribute="leading" secondItem="Zb9-AF-NoR" secondAttribute="leading" constant="8" id="0Bd-AM-XuM"/>
                                             <constraint firstAttribute="bottom" secondItem="hgI-hy-aU5" secondAttribute="bottom" constant="20" id="2hU-OM-4F4"/>
@@ -167,7 +168,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Zb9-AF-NoR" secondAttribute="bottom" id="8x2-eB-uyI"/>
                                     <constraint firstAttribute="trailing" secondItem="Zb9-AF-NoR" secondAttribute="trailing" id="NEV-3L-dmb"/>
@@ -186,6 +187,14 @@
                             <constraint firstAttribute="bottom" secondItem="H6I-WQ-vpT" secondAttribute="bottom" id="c0P-px-H2P"/>
                             <constraint firstItem="H6I-WQ-vpT" firstAttribute="trailing" secondItem="nfj-0O-KaB" secondAttribute="trailing" id="cGT-ZG-BHU"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="0.16023641820000001" green="0.35990726950000002" blue="0.54904168840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="0.15686274510000001" green="0.28235294119999998" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <size key="freeformSize" width="393" height="1000"/>
                     <connections>
@@ -195,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BC9-VW-nIw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-905" y="906"/>
+            <point key="canvasLocation" x="-1192" y="925"/>
         </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
