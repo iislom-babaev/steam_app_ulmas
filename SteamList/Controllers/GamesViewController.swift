@@ -7,14 +7,18 @@
 
 import UIKit
 
-class GamesViewController: UIViewController {
+class GamesViewController: UIViewController, UISearchResultsUpdating {
     
     @IBOutlet weak var tableView: UITableView!
+    private let games = MockData.games
+    var searchController: UISearchController!
+    var filteredData = [Game]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         configureTableView()
+        configureSearchController()
     }
     
     private func configureTableView() {
@@ -22,17 +26,37 @@ class GamesViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UINib.init(nibName: GameTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: GameTableViewCell.cellId)
     }
+    
+    private func configureSearchController() {
+        searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.sizeToFit()
+        definesPresentationContext = true
+        navigationItem.searchController = searchController
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        filteredData.removeAll()
+        if let searchText = searchController.searchBar.text {
+            for title in games {
+                if title.title.lowercased().contains(searchText.lowercased()) {
+                    filteredData.append(title)
+                }
+            }
+            tableView.reloadData()
+        }
+    }
 }
 
 extension GamesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return MockData.games.count
+        return filteredData.isEmpty ? games.count : filteredData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: GameTableViewCell.cellId, for:  indexPath) as! GameTableViewCell
-        let game = MockData.games[indexPath.row]
+        let game = filteredData.isEmpty ?   games[indexPath.row] : filteredData[indexPath.row]
         cell.cellTitle.text = "\(game.title)"
         if game.isFavorite {
             cell.cellIcon.imageView?.image = UIImage(systemName: "star.fill")
@@ -49,7 +73,7 @@ extension GamesViewController: UITableViewDataSource {
     }
     
     func adjustIsFavorite(_ tableView: UITableView,_ indexPath: IndexPath) -> Game {
-        var gameObj = MockData.games[indexPath.row]
+        var gameObj = games[indexPath.row]
         let cell = tableView.cellForRow(at: indexPath)  as! GameTableViewCell
         if cell.cellIcon.imageView?.image == UIImage(systemName: "star") {
             gameObj.isFavorite = false
