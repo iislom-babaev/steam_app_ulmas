@@ -38,9 +38,9 @@ class GamesViewController: UIViewController, UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         filteredData.removeAll()
         if let searchText = searchController.searchBar.text {
-            for title in games {
-                if title.title.lowercased().contains(searchText.lowercased()) {
-                    filteredData.append(title)
+            for game in games {
+                if game.title.lowercased().contains(searchText.lowercased()) {
+                    filteredData.append(game)
                 }
             }
             tableView.reloadData()
