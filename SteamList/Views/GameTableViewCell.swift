@@ -25,6 +25,15 @@ class GameTableViewCell: UITableViewCell {
             cellTitle.font = .systemFont(ofSize: 17)
         }
     }
+    
+    func configureCell(with game: Game) {
+        cellTitle.text = "\(game.title)"
+        if game.isFavorite {
+            cellIcon.imageView?.image = UIImage(systemName: "star.fill")
+        } else {
+            cellIcon.imageView?.image = UIImage(systemName: "star")
+        }
+    }
 }
 
 extension GameTableViewCell {

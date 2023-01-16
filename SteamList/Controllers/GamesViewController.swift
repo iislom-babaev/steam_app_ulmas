@@ -56,13 +56,8 @@ extension GamesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: GameTableViewCell.cellId, for:  indexPath) as! GameTableViewCell
-        let game = filteredData.isEmpty ?   games[indexPath.row] : filteredData[indexPath.row]
-        cell.cellTitle.text = "\(game.title)"
-        if game.isFavorite {
-            cell.cellIcon.imageView?.image = UIImage(systemName: "star.fill")
-        } else {
-            cell.cellIcon.imageView?.image = UIImage(systemName: "star")
-        }
+        let game = filteredData.isEmpty ? games[indexPath.row] : filteredData[indexPath.row]
+        cell.configureCell(with: game)
         
         return cell
     }
@@ -73,8 +68,8 @@ extension GamesViewController: UITableViewDataSource {
     }
     
     func adjustIsFavorite(_ tableView: UITableView,_ indexPath: IndexPath) -> Game {
-        var gameObj = games[indexPath.row]
         let cell = tableView.cellForRow(at: indexPath)  as! GameTableViewCell
+        var gameObj = games[indexPath.row]
         if cell.cellIcon.imageView?.image == UIImage(systemName: "star") {
             gameObj.isFavorite = false
         } else {
