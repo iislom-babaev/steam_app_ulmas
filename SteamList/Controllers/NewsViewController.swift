@@ -10,6 +10,8 @@ import UIKit
 class NewsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var popupXConstraint: NSLayoutConstraint!
+    @IBOutlet weak var backgroundButton: UIButton!
     let newsList = MockData.news
     
     override func viewDidLoad() {
@@ -22,6 +24,22 @@ class NewsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib.init(nibName: NewsTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: NewsTableViewCell.cellId)
+    }
+    
+    @IBAction func showFilterPopup(_ sender: Any) {
+        popupXConstraint.constant = 0
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.layoutIfNeeded()
+            self.backgroundButton.alpha = 0.5
+        })
+    }
+    
+    @IBAction func dismissFilterPopup(_ sender: Any) {
+        popupXConstraint.constant = -400
+        UIView.animate(withDuration: 0.1, animations: {
+            self.view.layoutIfNeeded()
+            self.backgroundButton.alpha = 0
+        })
     }
 }
 
