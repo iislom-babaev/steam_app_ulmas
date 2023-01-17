@@ -34,6 +34,14 @@ class GameTableViewCell: UITableViewCell {
             cellIcon.imageView?.image = UIImage(systemName: "star")
         }
     }
+    
+    func adjustIsFavorite(game: Game) {
+        if cellIcon.imageView?.image == UIImage(systemName: "star") {
+            game.isFavorite = false
+        } else {
+            game.isFavorite = true
+        }
+    }
 }
 
 extension GameTableViewCell {

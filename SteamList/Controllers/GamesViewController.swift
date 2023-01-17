@@ -65,20 +65,10 @@ extension GamesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let game = adjustIsFavorite(tableView, indexPath)
-        navigateToGameDetails(tableView, indexPath, game)
-    }
-    
-    func adjustIsFavorite(_ tableView: UITableView,_ indexPath: IndexPath) -> Game {
         let cell = tableView.cellForRow(at: indexPath)  as! GameTableViewCell
         var gameObj = games[indexPath.row]
-        if cell.cellIcon.imageView?.image == UIImage(systemName: "star") {
-            gameObj.isFavorite = false
-        } else {
-            gameObj.isFavorite = true
-        }
-        
-        return gameObj
+        cell.adjustIsFavorite(game: gameObj)
+        navigateToGameDetails(tableView, indexPath, gameObj)
     }
     
     func navigateToGameDetails(_ tableView: UITableView,  _ indexPath: IndexPath,_ game: Game) {
