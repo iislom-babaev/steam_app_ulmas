@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class FavoritesViewController: UIViewController, UISearchResultsUpdating {
+final class FavoritesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     private let games = MockData.games
@@ -44,7 +44,9 @@ final class FavoritesViewController: UIViewController, UISearchResultsUpdating {
         tableView.dataSource = self
         tableView.register(UINib.init(nibName: FavoritesTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: FavoritesTableViewCell.cellId)
     }
-    
+}
+
+extension FavoritesViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         filteredData.removeAll()
         if let searchText = searchController.searchBar.text {

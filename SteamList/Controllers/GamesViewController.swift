@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GamesViewController: UIViewController, UISearchResultsUpdating {
+class GamesViewController: UIViewController{
     
     @IBOutlet weak var tableView: UITableView!
     private let games = MockData.games
@@ -34,7 +34,9 @@ class GamesViewController: UIViewController, UISearchResultsUpdating {
         definesPresentationContext = true
         navigationItem.searchController = searchController
     }
-    
+}
+
+extension GamesViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         filteredData.removeAll()
         if let searchText = searchController.searchBar.text {
