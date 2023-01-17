@@ -37,8 +37,8 @@ class GamesViewController: UIViewController{
     }
     
     @objc private func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height + tableView.rowHeight, right: 0)
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height - 55, right: 0)
         }
     }
     
@@ -78,8 +78,7 @@ extension GamesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)  as! GameTableViewCell
         var gameObj = games[indexPath.row]
-        
-        let isfav = cell.adjustIsFavorite(game: gameObj)
+        let isfav = cell.adjustIsFavorite()
         gameObj.isFavorite = isfav
         navigateToGameDetails(tableView, indexPath, gameObj)
     }
