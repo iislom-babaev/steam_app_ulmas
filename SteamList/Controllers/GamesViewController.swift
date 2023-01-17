@@ -67,7 +67,10 @@ extension GamesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)  as! GameTableViewCell
         var gameObj = games[indexPath.row]
-        cell.adjustIsFavorite(game: gameObj)
+        
+        let isfav = cell.adjustIsFavorite(game: gameObj)
+        gameObj.isFavorite = isfav
+        
         navigateToGameDetails(tableView, indexPath, gameObj)
     }
     

@@ -35,12 +35,8 @@ class GameTableViewCell: UITableViewCell {
         }
     }
     
-    func adjustIsFavorite(game: Game) {
-        if cellIcon.imageView?.image == UIImage(systemName: "star") {
-            game.isFavorite = false
-        } else {
-            game.isFavorite = true
-        }
+    func adjustIsFavorite(game: Game) -> Bool  {
+        return cellIcon.imageView?.image == UIImage(systemName: "star")
     }
 }
 
