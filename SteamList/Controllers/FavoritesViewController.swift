@@ -12,7 +12,7 @@ final class FavoritesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     private let games = MockData.games
     var searchController: UISearchController!
-    var filteredData = [Game]()
+    var filteredData: [Game] = []
     
     
     override func viewDidLoad() {
