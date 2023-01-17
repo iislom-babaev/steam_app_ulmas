@@ -30,9 +30,8 @@ class GamesViewController: UIViewController{
     private func configureSearchController() {
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
-        searchController.searchBar.sizeToFit()
-        definesPresentationContext = true
         navigationItem.searchController = searchController
+        navigationController?.hideKeyboardWhenTappedAround()
     }
 }
 
@@ -66,7 +65,7 @@ extension GamesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)  as! GameTableViewCell
-        var gameObj = games[indexPath.row]
+        let gameObj = games[indexPath.row]
         cell.adjustIsFavorite(game: gameObj)
         navigateToGameDetails(tableView, indexPath, gameObj)
     }

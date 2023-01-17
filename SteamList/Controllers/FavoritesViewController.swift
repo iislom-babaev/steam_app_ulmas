@@ -32,6 +32,7 @@ final class FavoritesViewController: UIViewController {
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
         navigationItem.searchController = searchController
+        navigationController?.hideKeyboardWhenTappedAround()
     }
     
     private func configureLeftBarButton() {

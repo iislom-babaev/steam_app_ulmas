@@ -21,6 +21,7 @@
 		C0A2C98F296C1C6F00199458 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A2C98E296C1C6F00199458 /* NewsModel.swift */; };
 		C0BE9CD3296D60B200661385 /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE9CD2296D60B200661385 /* NewsDetailsViewController.swift */; };
 		C0E2893C2963DDEB004EC42F /* GameDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2893B2963DDEB004EC42F /* GameDetailsViewController.swift */; };
+		C0EFFBDA297679B90047662E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EFFBD9297679B90047662E /* Extensions.swift */; };
 		C0FF4661295ABFF600931949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4660295ABFF600931949 /* AppDelegate.swift */; };
 		C0FF4663295ABFF600931949 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4662295ABFF600931949 /* SceneDelegate.swift */; };
 		C0FF4668295ABFF600931949 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FF4666295ABFF600931949 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		C0A2C98E296C1C6F00199458 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		C0BE9CD2296D60B200661385 /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
 		C0E2893B2963DDEB004EC42F /* GameDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailsViewController.swift; sourceTree = "<group>"; };
+		C0EFFBD9297679B90047662E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C0FF465D295ABFF600931949 /* SteamList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteamList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FF4660295ABFF600931949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0FF4662295ABFF600931949 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,14 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		C0EFFBD8297679820047662E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C0EFFBD9297679B90047662E /* Extensions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		C0FF4654295ABFF600931949 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +143,7 @@
 		C0FF465F295ABFF600931949 /* SteamList */ = {
 			isa = PBXGroup;
 			children = (
+				C0EFFBD8297679820047662E /* Utility */,
 				C07E48D4295F1A4E009D18BB /* Data */,
 				C07E48D3295F1A38009D18BB /* Models */,
 				C07E48D2295F1A1C009D18BB /* Views */,
@@ -233,6 +244,7 @@
 				C0FF4677295B13A700931949 /* FavoritesViewController.swift in Sources */,
 				C0BE9CD3296D60B200661385 /* NewsDetailsViewController.swift in Sources */,
 				C0FF4679295B13B300931949 /* NewsViewController.swift in Sources */,
+				C0EFFBDA297679B90047662E /* Extensions.swift in Sources */,
 				C07E48D0295EF2BA009D18BB /* MockData.swift in Sources */,
 				C0FF4663295ABFF600931949 /* SceneDelegate.swift in Sources */,
 				C0138112295D6815007B257F /* GameTableViewCell.swift in Sources */,
