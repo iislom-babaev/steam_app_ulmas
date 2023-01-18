@@ -9,8 +9,8 @@ import UIKit
 
 extension UIViewController {
     func applyBackgroundGradient() {
-        let firstColor = UIColor(red: 41/255, green: 92/255, blue: 140/255, alpha: 1).cgColor
-        let secondColor = UIColor(red: 40/255, green: 72/255, blue: 95/255, alpha: 1).cgColor
+        let firstColor = UIColor(red: 0.132, green: 0.241, blue: 0.337, alpha: 1).cgColor
+        let secondColor = UIColor(red: 0.115, green: 0.163, blue: 0.227, alpha: 1).cgColor
         let layer = CAGradientLayer()
         layer.frame = view.bounds
         layer.colors = [firstColor, secondColor]
