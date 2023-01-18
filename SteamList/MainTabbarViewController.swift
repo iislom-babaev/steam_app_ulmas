@@ -28,6 +28,8 @@ class MainTabbarViewController: UITabBarController {
         favoritesNavController.title = "Favs"
         newsNavController.title = "News"
         
+        tabBar.backgroundColor = .systemGray4
+        
         setViewControllers([gamesNavController, favoritesNavController, newsNavController], animated: true)
     }
     
