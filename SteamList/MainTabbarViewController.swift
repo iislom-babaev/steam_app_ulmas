@@ -11,8 +11,8 @@ class MainTabbarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBlue
         configureTabbar()
+        applyBackgroundGradient()
     }
 
     func configureTabbar() {
@@ -30,6 +30,6 @@ class MainTabbarViewController: UITabBarController {
         
         setViewControllers([gamesNavController, favoritesNavController, newsNavController], animated: true)
     }
-
+    
 }
 
