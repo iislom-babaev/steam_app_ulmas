@@ -13,14 +13,12 @@ class GamesTableViewCell: UITableViewCell {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
-        label.text = "Game ?"
         
         return label
     }()
     
     private let favoriteIcon: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "star")
         imageView.tintColor = .systemOrange
         
         return imageView
@@ -46,5 +44,10 @@ class GamesTableViewCell: UITableViewCell {
         
         titleLabel.frame = CGRect(x: 12, y: 0, width: cellWidth - iconSize - 36, height: cellHeight)
         favoriteIcon.frame = CGRect(x: titleLabel.frame.size.width + 24, y: 4, width: iconSize, height: iconSize)
+    }
+    
+    func configure(with game: Game) {
+        titleLabel.text = game.title
+        favoriteIcon.image = game.isFavorite ? UIImage(systemName: "star.fill") : UIImage(systemName: "star")
     }
 }

@@ -8,13 +8,13 @@
 import UIKit
 
 final class MainTabbarViewController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTabbar()
         applyBackgroundGradient()
     }
-
+    
     func configureTabbar() {
         let gamesNavController = UINavigationController(rootViewController: GamesViewController())
         let favoritesNavController = UINavigationController(rootViewController: FavoritesViewController())
