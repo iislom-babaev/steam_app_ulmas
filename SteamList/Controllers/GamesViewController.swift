@@ -8,7 +8,7 @@
 import UIKit
 
 final class GamesViewController: UIViewController {
-
+    private var games = MockData.games
     private let tableView = {
         let tableView = UITableView()
         tableView.register(GamesTableViewCell.self, forCellReuseIdentifier: GamesTableViewCell.identifier)
@@ -33,11 +33,12 @@ final class GamesViewController: UIViewController {
 
 extension GamesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return games.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: GamesTableViewCell.identifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: GamesTableViewCell.identifier, for: indexPath) as! GamesTableViewCell
+        cell.configure(with: games[indexPath.row])
         
         return cell
     }
