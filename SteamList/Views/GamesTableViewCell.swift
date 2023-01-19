@@ -29,6 +29,7 @@ class GamesTableViewCell: UITableViewCell {
         contentView.addSubview(titleLabel)
         contentView.addSubview(favoriteIcon)
         backgroundColor = .clear
+        selectionStyle = .none
     }
     
     required init?(coder: NSCoder) {
@@ -40,20 +41,20 @@ class GamesTableViewCell: UITableViewCell {
         
         let cellHeight = contentView.frame.height
         let cellWidth = contentView.frame.width
-        let iconSize = cellHeight - 8
+        let iconSize = cellHeight - 40
         
         titleLabel.frame = CGRect(x: 12, y: 0, width: cellWidth - iconSize - 36, height: cellHeight)
-        favoriteIcon.frame = CGRect(x: titleLabel.frame.size.width + 24, y: 4, width: iconSize, height: iconSize)
+        favoriteIcon.frame = CGRect(x: titleLabel.frame.size.width + 24, y: 20, width: iconSize, height: iconSize)
     }
     
     func configure(with game: Game) {
         titleLabel.text = game.title
         if game.isFavorite {
             favoriteIcon.image = UIImage(systemName: "star.fill")
-            titleLabel.font = .systemFont(ofSize: 16, weight: .bold)
+            titleLabel.font = .systemFont(ofSize: 20, weight: .bold)
         } else {
             favoriteIcon.image = UIImage(systemName: "star")
-            titleLabel.font = .systemFont(ofSize: 15, weight: .regular)
+            titleLabel.font = .systemFont(ofSize: 18, weight: .regular)
         }
     }
 }

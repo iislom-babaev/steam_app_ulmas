@@ -21,6 +21,7 @@ final class GamesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.delegate = self
         view.addSubview(tableView)
         navigationItem.title = "Games"
     }
@@ -31,7 +32,7 @@ final class GamesViewController: UIViewController {
     }
 }
 
-extension GamesViewController: UITableViewDataSource {
+extension GamesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return games.count
     }
@@ -42,4 +43,9 @@ extension GamesViewController: UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
 }
