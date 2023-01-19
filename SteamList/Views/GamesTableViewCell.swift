@@ -30,6 +30,9 @@ class GamesTableViewCell: UITableViewCell {
         contentView.addSubview(favoriteIcon)
         backgroundColor = .clear
         selectionStyle = .none
+        let favoriteGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(favoriteTapped))
+        favoriteIcon.isUserInteractionEnabled = true
+        favoriteIcon.addGestureRecognizer(favoriteGestureRecognizer)
     }
     
     required init?(coder: NSCoder) {
@@ -49,7 +52,16 @@ class GamesTableViewCell: UITableViewCell {
     
     func configure(with game: Game) {
         titleLabel.text = game.title
-        if game.isFavorite {
+        toggleFavorite(withCondition: game.isFavorite)
+    }
+    
+    @objc func favoriteTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        toggleFavorite(withCondition: favoriteIcon.image == UIImage(systemName: "star"))
+    }
+    
+    func toggleFavorite(withCondition condition: Bool) {
+        if (condition) {
             favoriteIcon.image = UIImage(systemName: "star.fill")
             titleLabel.font = .systemFont(ofSize: 20, weight: .bold)
         } else {
@@ -57,4 +69,5 @@ class GamesTableViewCell: UITableViewCell {
             titleLabel.font = .systemFont(ofSize: 18, weight: .regular)
         }
     }
+    
 }
