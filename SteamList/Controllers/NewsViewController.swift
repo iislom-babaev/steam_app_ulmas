@@ -23,12 +23,19 @@ final class NewsViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         view.addSubview(tableView)
-        navigationItem.title = "News"
+        configureNavbar()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         tableView.frame = view.bounds
+    }
+    
+    func configureNavbar() {
+        navigationItem.title = "News"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Filter", style: .plain, target: self, action: nil)
+        navigationItem.rightBarButtonItem?.tintColor = .white
+        
     }
 }
 
