@@ -10,9 +10,13 @@ import UIKit
 struct Game {
     let title: String
     let isFavorite: Bool
+    let price: Double
+    let discount: Int
     
-    init(title: String, isFavorite: Bool) {
+    init(title: String, isFavorite: Bool, price: Double, discount: Int) {
         self.title = title
         self.isFavorite = isFavorite
+        self.price = price
+        self.discount = discount
     }
 }
