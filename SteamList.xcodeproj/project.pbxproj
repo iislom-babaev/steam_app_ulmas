@@ -16,6 +16,7 @@
 		C0B7D6712977F84300056BC2 /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7D6702977F84300056BC2 /* GamesTableViewCell.swift */; };
 		C0B7D6762978165F00056BC2 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7D6752978165F00056BC2 /* GameModel.swift */; };
 		C0B7D6792978176B00056BC2 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7D6782978176B00056BC2 /* MockData.swift */; };
+		C0CF9F89297968E200A7F6AD /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CF9F88297968E200A7F6AD /* FavoritesTableViewCell.swift */; };
 		C0FF4661295ABFF600931949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4660295ABFF600931949 /* AppDelegate.swift */; };
 		C0FF4663295ABFF600931949 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4662295ABFF600931949 /* SceneDelegate.swift */; };
 		C0FF4665295ABFF600931949 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF4664295ABFF600931949 /* MainTabbarViewController.swift */; };
@@ -33,6 +34,7 @@
 		C0B7D6702977F84300056BC2 /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
 		C0B7D6752978165F00056BC2 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		C0B7D6782978176B00056BC2 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		C0CF9F88297968E200A7F6AD /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		C0FF465D295ABFF600931949 /* SteamList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteamList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FF4660295ABFF600931949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0FF4662295ABFF600931949 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				C0B7D6702977F84300056BC2 /* GamesTableViewCell.swift */,
+				C0CF9F88297968E200A7F6AD /* FavoritesTableViewCell.swift */,
 				C02F1B4A297ABD9200C15434 /* NewsTableViewCell.swift */,
 			);
 			path = Views;
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CF9F89297968E200A7F6AD /* FavoritesTableViewCell.swift in Sources */,
 				C0A6D57E2977C2D200199B1D /* GamesViewController.swift in Sources */,
 				C0FF4665295ABFF600931949 /* MainTabbarViewController.swift in Sources */,
 				C02F1B4B297ABD9200C15434 /* NewsTableViewCell.swift in Sources */,
