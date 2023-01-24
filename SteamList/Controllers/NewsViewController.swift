@@ -10,6 +10,7 @@ import UIKit
 final class NewsViewController: UIViewController {
     
     private var news = MockData.news
+    
     private let tableView = {
         let tableView = UITableView()
         tableView.register(NewsTableViewCell.self, forCellReuseIdentifier: NewsTableViewCell.identifier)
@@ -31,14 +32,12 @@ final class NewsViewController: UIViewController {
         tableView.frame = view.bounds
     }
     
-    func configureNavbar() {
+    private func configureNavbar() {
         navigationItem.title = "News"
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Filter", style: .plain, target: self, action: nil)
         navigationItem.rightBarButtonItem?.tintColor = .white
-        
     }
 }
-
 
 extension NewsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

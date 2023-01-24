@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NewsTableViewCell: UITableViewCell {
+final class NewsTableViewCell: UITableViewCell {
     
     static let identifier = "NewsTableViewCell"
     
@@ -49,12 +49,8 @@ class NewsTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        contentView.addSubview(titleLabel)
-        contentView.addSubview(gameNameLabel)
-        contentView.addSubview(dateLabel)
-        contentView.addSubview(developerLabel)
-        backgroundColor = .clear
-        selectionStyle = .none
+        constructHierarchy()
+        configureCellStyle()
         addConstraints()
     }
     
@@ -79,6 +75,18 @@ class NewsTableViewCell: UITableViewCell {
         constraints.append(dateLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 6))
         
         NSLayoutConstraint.activate(constraints)
+    }
+    
+    private func configureCellStyle() {
+        backgroundColor = .clear
+        selectionStyle = .none
+    }
+    
+    private func constructHierarchy() {
+        contentView.addSubview(titleLabel)
+        contentView.addSubview(gameNameLabel)
+        contentView.addSubview(dateLabel)
+        contentView.addSubview(developerLabel)
     }
     
     func configure(with news: News) {
