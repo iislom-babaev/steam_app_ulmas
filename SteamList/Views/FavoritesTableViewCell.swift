@@ -7,7 +7,8 @@
 
 import UIKit
 
-class FavoritesTableViewCell: UITableViewCell {
+final class FavoritesTableViewCell: UITableViewCell {
+    
     static let identifier = "GamesTableViewCell"
     
     private let titleLabel: UILabel = {
