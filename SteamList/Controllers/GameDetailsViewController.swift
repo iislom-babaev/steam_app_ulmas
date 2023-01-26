@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GameDetailsViewController: UIViewController {
+final class GameDetailsViewController: UIViewController {
     
     private let scrollView: UIScrollView = {
         var scrollView = UIScrollView()
@@ -31,7 +31,7 @@ class GameDetailsViewController: UIViewController {
     }()
     
     
-    var constraints = [NSLayoutConstraint]()
+    private var constraints = [NSLayoutConstraint]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

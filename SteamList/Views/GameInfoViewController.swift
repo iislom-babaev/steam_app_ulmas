@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GameInfoViewController: UIViewController {
+final class GameInfoViewController: UIViewController {
     
     private let topImage: UIImageView = {
         var imageView = UIImageView()
@@ -126,7 +126,7 @@ class GameInfoViewController: UIViewController {
         return imageView
     }()
     
-    var constraints = [NSLayoutConstraint]()
+    private var constraints = [NSLayoutConstraint]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

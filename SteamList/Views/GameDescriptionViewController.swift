@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GameDescriptionViewController: UIViewController {
+final class GameDescriptionViewController: UIViewController {
    
     private let dividerBar: UIView = {
         var view = UIView()
@@ -38,7 +38,7 @@ class GameDescriptionViewController: UIViewController {
         return imageView
     }()
     
-    var constraints = [NSLayoutConstraint]()
+    private var constraints = [NSLayoutConstraint]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
