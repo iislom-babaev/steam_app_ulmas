@@ -16,4 +16,10 @@ extension UIViewController {
         layer.colors = [firstColor, secondColor]
         view.layer.insertSublayer(layer, at: 0)
     }
+    
+    func add(_ child: UIViewController) {
+        addChild(child)
+        view.addSubview(child.view)
+        child.didMove(toParent: self)
+    }
 }
